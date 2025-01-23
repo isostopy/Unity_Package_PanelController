@@ -1,0 +1,21 @@
+{
+    "name":"com.isostopy.panel-controller",
+    "version": "1.0.0",
+    "displayName": "Isostopy Panel Controller",
+    "description": "Sistema que permite mostrar y ocultar paneles. Pensado para mostrar un único panel de UI a la vez.",
+    "author": 
+    {
+        "name": "isostopy",
+        "email": "software@isostopy.com",
+        "url": "https://isostopy.com"
+    },
+    
+    "samples":
+		[
+			{
+				"displayName":"Usage",
+				"description":"Escena que muestra el funcionamiento.",
+				"path":"Samples~/Usage"
+			}
+		]
+}
