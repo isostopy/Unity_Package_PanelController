@@ -1,3 +1,4 @@
+using Codice.Client.BaseCommands.Merge.Xml;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,6 +23,12 @@ namespace Isostopy.PanelController
                 var child = transform.GetChild(i);
                 panels.Add(new Panel { id = child.name, gameObject = child.gameObject });
             }
+
+            if (transform.childCount == 0)
+            {
+                Debug.LogWarning("The panel controller works by expecting panels to be children of the object where the \"PanelController\" script is located. If you reset the \"Panel controller\" component, the found child panels will be added automatically. Panels do not need to carry any extra script.");
+            }
+
         }
 
 
